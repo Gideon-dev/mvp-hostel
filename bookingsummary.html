@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="css/bookingsummary.css" rel="stylesheet">
+    <title>Mountainviewprovince.com</title>
+</head>
+<body>
+    <div class="booking-summary-container">
+        <div class="breadcrumb font-sora">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="prev-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>   
+            <p> Booking Summary </p>           
+        </div>
+    
+        <section id="selected-hostel">
+            <div>
+                <img class="selected-img" src="images/booked-img.png" alt="hostel's image" loading="lazy">  
+            </div>
+            <div class="booked-details">
+                <p class="hos-name">Blue Water Hostel & Lodge</p>
+                <p class="location">
+                    <span>
+                       <img class="icons" src="images/location.png" alt="location icon">                              
+                    </span>
+                    45, Ridge Street, Eclipse Road
+                </p>
+            </div>
+        </section>
+        <section id="room-details">
+            <h2> Room Details </h2>
+            <div class="room-details-content">
+                <div id="room-no">
+                    <p>Room number</p>
+                    <p>Room 28</p>
+                </div>
+                <div id="n-bed">
+                    <p>No of Bed</p>
+                    <p>Three(03)</p>
+                </div>
+                <div id="room-cat">
+                    <p>Room Category</p>
+                    <p>Premium Gold Single</p>
+                </div>
+                <div id="b-rate">
+                    <p>Booking Rate</p>
+                    <p>2 Semester</p>
+                </div>
+            </div>
+        </section>
+        <section id="payment-details">
+            <h2> Payment Details </h2>
+            <div class="payment-details-content">
+                <div id="total-pay">
+                    <p>Price</p>
+                    <p># <span class="price">755,000</span></p>
+                </div>
+                <div id="sf">
+                    <p>Service Fee</p>
+                    <p>#<span class="service-charge">5,000</span></p>
+                </div>
+                <hr class="divider">
+                <div id="grand-total">
+                    <p>TOTAL PAYMENT</p>
+                    <p >#<span class="result"></span> </p>
+                </div>
+            </div>
+        </section>
+        <section id="payment-method">
+            <h2>Payment Method</h2>
+            <div id="payment-options">
+                <input type="radio" class="method-icon" name="pay-method" value="flutterwave" checked>
+                <input type="radio" class="method-icon" name="pay-method" value="flutterwave">
+                <input type="radio" class="method-icon" name="pay-method" value="flutterwave">
+            </div>
+        </section>
+        <div class="button-section ">
+            <button type="submit" id="p-to-pay" class="font-sora">Proceed to pay </button>
+        </div>
+    </div>
+    
+    <script src="js/bookingSummary.js"></script>
+</body>
+</html>

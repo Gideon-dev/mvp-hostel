@@ -29,3 +29,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+const caretUp = document.getElementById("caret-up");
+const caretDown= document.getElementById("caret-down");
+const dropdownContent = document.getElementById("other-content");
+caretUp.addEventListener("click", function(){
+    // e.preventDefault();
+    caretUp.classList.add("not-expanded");       // Hide caretUp
+    caretDown.classList.remove("not-expanded");  // Show caretDown
+    dropdownContent.style.height = '0';
+    dropdownContent.style.opacity = '0';
+
+})
+caretDown.addEventListener("click", function(){
+    // e.preventDefault();
+    e.target.classList.toggle("not-expanded");
+    caretUp.classList.toggle("not-expanded");
+    dropdownContent.style.height = dropdownContent.scrollHeight + 'px';
+    dropdownContent.style.opacity = '1';
+
+})

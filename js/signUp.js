@@ -1,4 +1,31 @@
-// Function to toggle dropdown visibility on click or keypress (Enter/Space)
+// Function to toggle the background based on input value
+
+function handleInputBackground(inputElement) {
+
+  const formGroup = inputElement.closest('.form-group');
+  
+  if (inputElement.value.trim() !== "") {
+    inputElement.classList.add("input-has-value");
+   
+  } else {
+    inputElement.classList.remove("input-has-value");
+
+  }
+}
+
+
+
+document.querySelectorAll('input[type="text"], input[type="password"]').forEach(function(inputElement) {
+  // Check for existing value when the page loads
+  handleInputBackground(inputElement);
+
+  // Listen for changes in input fields
+  inputElement.addEventListener('input', function() {
+    handleInputBackground(inputElement);
+  });
+});
+
+// Handle custom dropdowns for Institution and Gender
 document.querySelectorAll('.select-selected').forEach(function(dropdown) {
   dropdown.addEventListener('click', function() {
     toggleDropdown(this);
@@ -6,13 +33,13 @@ document.querySelectorAll('.select-selected').forEach(function(dropdown) {
 
   dropdown.addEventListener('keydown', function(event) {
     if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault(); // Prevent default spacebar scrolling
+      event.preventDefault();
       toggleDropdown(this);
     }
   });
 });
 
-// Function to toggle the dropdown
+// Function to toggle dropdown visibility and handle background change
 function toggleDropdown(element) {
   const selectItems = element.nextElementSibling;
   const isExpanded = element.getAttribute('aria-expanded') === 'true';
@@ -23,43 +50,39 @@ function toggleDropdown(element) {
   element.classList.toggle('active');
 }
 
-// Capture click, arrow keys, and Enter/Space to navigate through options and select
+// Capture the selected value from the custom dropdown and update hidden input
 document.querySelectorAll('.select-items div').forEach(function(option) {
-  // Handle option selection via click
   option.addEventListener('click', function() {
     selectOption(this);
   });
 
-  // Handle option selection via keyboard
   option.addEventListener('keydown', function(event) {
     const key = event.key;
 
     if (key === 'Enter' || key === ' ') {
       event.preventDefault();
       selectOption(this);
-    } else if (key === 'ArrowDown') {
-      event.preventDefault();
-      const next = this.nextElementSibling;
-      if (next) next.focus(); // Move to next option
-    } else if (key === 'ArrowUp') {
-      event.preventDefault();
-      const prev = this.previousElementSibling;
-      if (prev) prev.focus(); // Move to previous option
     }
   });
 });
 
-// Function to select an option and close the dropdown
+
 function selectOption(option) {
   const selectedValue = option.getAttribute('data-value');
   const selectBox = option.closest('.custom-select').querySelector('.select-selected p');
   const hiddenInput = option.closest('.custom-select').nextElementSibling;
 
-  // Update the selected text and the hidden input value
+ 
   selectBox.textContent = selectedValue;
   hiddenInput.value = selectedValue;
 
-  // Close the dropdown
+
+  const customSelect = option.closest('.custom-select').querySelector('.select-selected');
+  if (selectedValue) {
+    customSelect.classList.add("select-has-value");
+  }
+
+  
   const selectItems = option.parentElement;
   selectItems.classList.add('select-hide');
   const selectSelected = option.closest('.custom-select').querySelector('.select-selected');
@@ -67,23 +90,24 @@ function selectOption(option) {
   selectSelected.setAttribute('aria-expanded', 'false');
 }
 
-// Handle form submission
-document.getElementById('signUpForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent actual form submission for demo purposes
 
-  // Gather all form input values
-  const studentName = document.getElementById('student-name').value;
-  const email = document.getElementById('email').value;
-  const institution = document.getElementById('Institution').value;
-  const gender = document.getElementById('gender').value;
-  const password = document.getElementById('password').value;
+const passwordInput = document.getElementById('password');
+const togglePassword = document.getElementById('toggle-password');
+const eyeOpenIcon = document.getElementById('eye-open');
+const eyeCloseIcon = document.getElementById('eye-close');
 
-  // Display or send form values
-  console.log('Student Name:', studentName);
-  console.log('Email:', email);
-  console.log('Institution:', institution);
-  console.log('Gender:', gender);
-  console.log('Password:', password);
+// Add click event listener to toggle password visibility
+togglePassword.addEventListener('click', function () {
 
-  // Here you can send the data to your server or API
+  const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+  passwordInput.setAttribute('type', type);
+
+
+  if (type === 'password') {
+    eyeOpenIcon.style.display = 'inline';
+    eyeCloseIcon.style.display = 'none';
+  } else {
+    eyeOpenIcon.style.display = 'none';
+    eyeCloseIcon.style.display = 'inline';
+  }
 });

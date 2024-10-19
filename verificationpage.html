@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/verficationpage.css">
+    <title>Mountainviewprovince.com</title>
+</head>
+<body>
+    <div class="verficationpage-container">
+        <div class="verif-header">
+            <h2> Verfication Code </h2>
+            <p> Enter verification code sent to email. <a href="#" target="_blank">Change mail?</a> </p>
+        </div>
+        <form id="verificationForm">
+            <div class="w-full form-group" id="code-box">
+                <input type="text" id="code1" maxlength="1" class="code-input" />
+                <input type="text" id="code2" maxlength="1" class="code-input" />
+                <input type="text" id="code3" maxlength="1" class="code-input" />
+                <input type="text" id="code4" maxlength="1" class="code-input" />
+            </div>
+        
+            <span id="email-error-msg"></span>
+            <span id="success-msg"></span>
+          
+            <div class="form-group">
+                <button type="submit" id="register-btn">Verify now</button>
+            </div>
+        </form>
+        <script src="js/verificationPage.js"></script>
+    </div>
+</body>
+</html>

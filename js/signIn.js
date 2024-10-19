@@ -10,16 +10,16 @@
     passwordInput.setAttribute('type', type);
   
   
-    if (type === 'password') {
-      eyeOpenIcon.style.display = 'inline';
-      eyeCloseIcon.style.display = 'none';
-    } else {
-      eyeOpenIcon.style.display = 'none';
-      eyeCloseIcon.style.display = 'inline';
-    }
- });
+if (type === 'password') {
+    eyeOpenIcon.style.display = 'inline';
+    eyeCloseIcon.style.display = 'none';
+} else {
+    eyeOpenIcon.style.display = 'none';
+    eyeCloseIcon.style.display = 'inline';
+}
+});
   
- document.getElementById('signInForm').addEventListener('submit', function(event) {
+document.getElementById('signInForm').addEventListener('submit', function(event) {
     const emailInput = document.getElementById('email');
     const emailError = document.getElementById('email-error-msg');
     const emailValue = emailInput.value.trim();

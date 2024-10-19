@@ -16,7 +16,6 @@ function handleInputBackground(inputElement) {
 
 
 document.querySelectorAll('input[type="text"], input[type="password"]').forEach(function(inputElement) {
-  // Check for existing value when the page loads
   handleInputBackground(inputElement);
 
   // Listen for changes in input fields
@@ -39,18 +38,17 @@ document.querySelectorAll('.select-selected').forEach(function(dropdown) {
   });
 });
 
-// Function to toggle dropdown visibility and handle background change
+
 function toggleDropdown(element) {
   const selectItems = element.nextElementSibling;
   const isExpanded = element.getAttribute('aria-expanded') === 'true';
 
-  // Toggle the dropdown visibility and the aria-expanded attribute
   element.setAttribute('aria-expanded', !isExpanded);
   selectItems.classList.toggle('select-hide');
   element.classList.toggle('active');
 }
 
-// Capture the selected value from the custom dropdown and update hidden input
+//to Capture the selected value from the custom dropdown and update hidden input
 document.querySelectorAll('.select-items div').forEach(function(option) {
   option.addEventListener('click', function() {
     selectOption(this);
@@ -91,12 +89,15 @@ function selectOption(option) {
 }
 
 
+
+
+
 const passwordInput = document.getElementById('password');
 const togglePassword = document.getElementById('toggle-password');
 const eyeOpenIcon = document.getElementById('eye-open');
 const eyeCloseIcon = document.getElementById('eye-close');
 
-// Add click event listener to toggle password visibility
+
 togglePassword.addEventListener('click', function () {
 
   const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';

@@ -17,8 +17,11 @@ p{
     margin: 8px;
 }
 .booking-summary-container{
+    width: 100%;
+    min-height: 100vh;
     padding: 15px;
     height: auto;
+    /* border: 1px solid black; */
 }
 .breadcrumb{
     display: flex;
@@ -138,7 +141,7 @@ input[type="radio"]:focus,input[type="radio"]:checked{
 }
 #payment-method{
     flex-direction: column;
-    margin: 2em 0em;
+    margin: 5em 0em;
 }
 #payment-options{
     outline: 0.45px solid rgba(161, 155, 155,0.5);

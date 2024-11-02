@@ -22,18 +22,18 @@ document.addEventListener('DOMContentLoaded', function() {
       toggleSubOption();
   
       headerInput.addEventListener('change', () => {
-        options.forEach(otherOption => {
-            if (otherOption !== option) {
-                const otherHeaderInput = otherOption.querySelector('.header-input');
-                otherHeaderInput.checked = false;
-                otherOption.querySelector('.sub-option').style.display = 'none';
-                otherOption.querySelector('#caret-up').style.display = 'none';
-                otherOption.querySelector('#caret-down').style.display = 'inline-block';
-            }
-            });
-  
-            toggleSubOption();
+      options.forEach(otherOption => {
+        if (otherOption !== option) {
+          const otherHeaderInput = otherOption.querySelector('.header-input');
+          otherHeaderInput.checked = false;
+          otherOption.querySelector('.sub-option').style.display = 'none';
+          otherOption.querySelector('#caret-up').style.display = 'none';
+          otherOption.querySelector('#caret-down').style.display = 'inline-block';
+        }
         });
+
+      toggleSubOption();
+      });
         
 
     });

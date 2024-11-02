@@ -26,10 +26,22 @@ h1,h2,h3,h4,h5,h6{
     height: 15px;
 }
 .hostel-media-box{
+    width: 100%;
     aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
     border-radius: 10px;
     overflow: hidden;
 }
+.hostel-media-box img{
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+.hostel-media-box img.hidden{
+    opacity: 0;
+}
+
 .m-image{
     position: relative;
     object-fit: cover;

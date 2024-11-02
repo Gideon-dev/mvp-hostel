@@ -1,0 +1,149 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+  /* background-color: #F1F1F1; */
+}
+html{
+  background-color: #F1F1F1;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+#req-container{
+    padding: 15px;
+}
+.font-sora{
+    font-family: "Sora", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.breadcrumb{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.icons,.prev-icon{
+    width: 15px;
+    height: 15px;
+}
+.switch-icons{
+    width: 15px;
+    height: 15px;
+    color: black;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin:1.5rem 0;
+}
+.form-group label{
+    width: 100%;
+    font-weight:600;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 15.12px;
+}
+input,textarea{
+    padding:15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    overflow: hidden;
+    outline: none;
+    background-color: rgba(217, 217, 217, 1);
+}
+input,select{
+    padding:15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    overflow: hidden;
+    outline: none;
+}
+input:focus, textarea:focus{
+    border: 2px solid #863A0A;
+    overflow: hidden;
+    box-shadow: none;
+
+}
+.option:hover{
+    background-color: rgba(217, 217, 217, 1);
+    padding: 5px;
+    border-radius: 5px;
+}
+input,.select-selected p,.select-items div p{
+    font-weight: 400;
+    font-size: 12px;
+    color: #282727;
+}
+label{
+    font-weight: 600;
+    font-size: 12px;
+}
+.custom-select{
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+}
+.select-selected{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(217, 217, 217, 1);
+}    
+.select-selected:hover{
+    border: 2px solid #863A0A;
+    opacity: 1;
+    box-shadow: none;
+}
+.select-hide,.not-expanded{
+    display: none;
+}
+.select-items{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #D9D9D9;
+    font-weight: 400;
+    font-size: 12px;
+}
+.select-items div{
+    padding: 5px;
+    background-color: #D9D9D9;
+}
+.option{
+    background-color: #D9D9D9;
+}
+.w-full{
+    width: 100%;
+}
+#register-btn{
+    width: 100%;
+    padding: 15px;
+    background-color: #863A0A;
+    color: white;
+    outline: 1px solid #863A0A;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.64px;
+}
+.uselogin{
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+.btn-group{
+    margin-top: 3rem; 
+}

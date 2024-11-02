@@ -4,11 +4,11 @@
   const eyeCloseIcon = document.getElementById('eye-close');
   
   // Add click event listener to toggle password visibility
-  togglePassword.addEventListener('click', function () {
-  
-    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-    passwordInput.setAttribute('type', type);
-  
+togglePassword.addEventListener('click', function () {
+
+const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+passwordInput.setAttribute('type', type);
+
   
 if (type === 'password') {
     eyeOpenIcon.style.display = 'inline';

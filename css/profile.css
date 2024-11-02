@@ -1,0 +1,93 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+  font-family: "Sora", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+html{
+  background-color: #F1F1F1;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+.profile-container{
+    padding: 15px;
+}
+.profile-header h2{
+    font-weight: 600;
+    font-size: 18px;
+}
+.user-info h2{
+    font-weight: 600;
+    font-size: 14px;
+    margin: 3px;
+}
+.user-info p{
+    font-weight: 400;
+    font-size: 10px;
+    margin: 3px;
+}
+.profile-header p{
+    font-weight: 400;
+    font-size: 12px;
+    margin: 2px;
+    color: #565454;
+}
+.profile-header{
+    margin: 2rem 0rem;
+}
+.reset-header{
+    margin: 30px 0px;
+}
+.w-full{
+    width: 100%;
+}
+.m-flex{
+    display: flex;
+    align-items: center;
+}
+.gap-2{
+    gap: 15px;
+}
+.user-info {
+    background-color: #F0EBE8;
+    border: 1px solid rgba(161, 155, 155,0.5);
+    border-radius: 5px;
+    gap: 10px;
+    padding: 10px 25px;
+    margin: 2rem 0rem;
+}
+.user-img{
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+    /* border: 1px solid black; */
+    object-fit: cover;
+    object-position: center;
+}
+.user-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.p-option{
+    padding: 5px;
+    background-color: #D9D9D9;
+    outline: 1px solid #A19B9B;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 1rem 0rem;
+    padding: 8px 15px;
+}
+.p-option p{
+    font-weight: 400;
+    font-size: 14px;
+    margin: 5px;
+}
+a{
+    text-decoration: none;
+    color: #282727;
+}

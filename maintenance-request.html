@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/maintenance-req.css">
+    <title>Mountainviewprovince.com</title>
+</head>
+<body>
+    <div id="req-container" class="font-sora">
+        <div class="breadcrumb font-sora">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="prev-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>   
+            <p> Maintenance Request </p>           
+        </div>
+        <form class="font-sora">
+            <div class="form-group">
+                <label for="hostel-name">Hostel Name</label>
+                <input type="text" placeholder="Blue Water Hostel">
+            </div>
+            <div class="form-group">
+                <label for="room-number">Room number</label>
+                <input type="text" placeholder="Blue Water Hostel">
+            </div>
+            <div class="form-group">
+                <label for="issue-category">Issue category</label>
+                <div class="custom-select">
+                    <div class="select-selected" tabindex="0" role="button" aria-expanded="false">
+                        <p class="displayText">Select Isssue type</p>
+                        <span class="sel_icon">
+                            <svg id="caret-down" class="switch-icons" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>  
+                                <g id="SVGRepo_iconCarrier"> <path d="M19.1416 9.92896L12.7776 16.2929C12.3871 16.6834 11.7539 16.6834 11.3634 16.2929L4.99946 9.92895" stroke="#282727" stroke-linecap="round"/> </g>
+                            </svg>
+                            <svg id="caret-up" class="switch-icons not-expanded" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                <g id="SVGRepo_iconCarrier"> <path d="M5 14.0711L11.364 7.70711C11.7545 7.31658 12.3877 7.31658 12.7782 7.70711L19.1421 14.0711" stroke="#282727" stroke-linecap="round"/> </g>
+                            </svg>
+                        </span>   
+                        
+                    </div>
+                    <div class="select-items select-hide">
+                      <div data-value="Electrical issues" role="option" tabindex="0"><p class="option">Electrical issues</p></div>
+                      <div data-value="Plumbing" role="option" tabindex="0"><p class="option">Plumbing</p></div>
+                      <div data-value="Appliances" role="option" tabindex="0"><p class="option">Appliances</p></div>
+                      <div data-value=">Lock/Key issues" role="option" tabindex="0"><p class="option">Lock/Key issues</p></div>
+                      <div data-value="Others" role="option" tabindex="0"><p class="option">Others</p></div>
+                    </div>
+                </div>
+                <input type="hidden" id="Institution" name="Institution">
+                <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+                <label for="issue-description">Decription of the issue</label>
+                <textarea name="" id="" rows="10" placeholder="Write your maintenance issue in detail (e.g “No power in the room”)"></textarea>
+            </div>
+            <div class="form-group btn-group font-sora">
+                <button type="submit" class="font-sora" id="register-btn"> Submit request </button>
+            </div>
+        </form>
+    </div>
+    <script src="js/maintenance-req.js"></script>
+</body>
+</html>

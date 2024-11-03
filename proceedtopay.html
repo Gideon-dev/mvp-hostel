@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <link href="css/bookingsummary.css" rel="stylesheet">
+    <link href="css/proceedtopay.css" rel="stylesheet">
     <title>Mountainviewprovince.com</title>
 </head>
 <body>
@@ -69,13 +69,38 @@
                     <p >#<span class="result"></span> </p>
                 </div>
             </div>
-        </section>
+        </section>  
         <section id="payment-method">
             <h2>Payment Method</h2>
             <div id="payment-options">
-                <input type="radio" class="method-icon" name="pay-method" value="flutterwave" checked>
-                <input type="radio" class="method-icon" name="pay-method" value="flutterwave">
-                <input type="radio" class="method-icon" name="pay-method" value="flutterwave">
+
+                <form action="" id="forFlutter" class="pay-form">
+                    <input type="hidden" name="public_key" value="">
+                    <input type="hidden" name="" value="">
+                    <input type="hidden" name="" value="">
+                    <input type="hidden" name="" value="">
+                    <button type="submit" class="proceed-btn" id="flutterBtn">
+                        <img src="images/flutterwave.png" alt="flutterwave logo">
+                    </button>
+                </form>
+                <form action="" id="forRemmita" class="pay-form">
+                    <input type="hidden" name="public_key" value="">
+                    <input type="hidden" name="" value="">
+                    <input type="hidden" name="" value="">
+                    <input type="hidden" name="" value="">
+                    <button type="submit" class="proceed-btn" id="RemmitaBtn">
+                        <img src="images/remita.png" alt="flutterwave logo">
+                    </button>
+                </form>
+                <form action="" id="forPaystack" class="pay-form">
+                    <input type="hidden" name="public_key" value="">
+                    <input type="hidden" name="" value="">
+                    <input type="hidden" name="" value="">
+                    <input type="hidden" name="" value="">
+                    <button type="submit" class="proceed-btn" id="pStackBtn">
+                        <img src="images/paystack.png" alt="flutterwave logo">
+                    </button>
+                </form>
             </div>
         </section>
         <!-- <div class="button-section ">

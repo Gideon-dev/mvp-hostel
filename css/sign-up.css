@@ -5,7 +5,6 @@
   font-family: "Sora", system-ui;
   font-optical-sizing: auto;
   font-style: normal;
-  /* background-color: #F1F1F1; */
 }
 html{
   background-color: #F1F1F1;
@@ -26,7 +25,6 @@ h1,h2,h3,h4,h5,h6{
 }
 .signup-header{
     margin: 25px 0px;
-    /* border: 1px solid black; */
 }
 .sign-up-container{
     padding: 15px;
@@ -35,7 +33,7 @@ h1,h2,h3,h4,h5,h6{
 .w-full{
     width: 100%;
 }
-input,select{
+input{
     padding:15px;
     background-color: #D9D9D9;
     border: transparent;
@@ -45,7 +43,6 @@ input,select{
 }
 input:focus{
     border: 2px solid #863A0A;
-    /* border: 1px solid black; */
     overflow: hidden;
     box-shadow: none;
 
@@ -66,7 +63,7 @@ input:focus{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3px 5px;
+    padding: 8px;
     border-radius: 5px;
     background-color: #D9D9D9;
     border: none;
@@ -85,11 +82,18 @@ input:focus{
     margin: 3px 0px;
     padding: 10px;
     border-radius: 5px;
-    background-color: #D9D9D9;
+    background-color:rgba(217, 217, 217, 1) ;
+    border: 1px solid green;
+}
+.opt{
+    padding: 5px;
+}
+.option:focus{
+    border: 1px solid rgba(134, 58, 10, 1);
+    background-color: rgba(172, 171, 171, 1);
 }
 .option:hover{
     background-color: #ACABAB;
-    padding: 5px;
     border-radius: 5px;
 }
 input,.select-selected p,.select-items div p {

@@ -1,5 +1,4 @@
 // Function to toggle the background based on input value
-
 function handleInputBackground(inputElement) {
 
   const formGroup = inputElement.closest('.form-group');
@@ -18,13 +17,13 @@ function handleInputBackground(inputElement) {
 document.querySelectorAll('input[type="text"], input[type="password"]').forEach(function(inputElement) {
   handleInputBackground(inputElement);
 
-  // Listen for changes in input fields
+ 
   inputElement.addEventListener('input', function() {
     handleInputBackground(inputElement);
   });
 });
 
-// Handle custom dropdowns for Institution and Gender
+
 document.querySelectorAll('.select-selected').forEach(function(dropdown) {
   dropdown.addEventListener('click', function() {
     toggleDropdown(this);
@@ -89,26 +88,26 @@ function selectOption(option) {
 }
 
 
+const passwordInputs = document.querySelectorAll(".p-input");
 
+passwordInputs.forEach((input)=> {
+  const togglePassword = input.parentNode.querySelector(".toggle-password");
+  const eyeOpenIcon = input.parentNode.querySelector(".eye-open");
+  const eyeCloseIcon = input.parentNode.querySelector(".eye-close");
 
+  togglePassword.addEventListener("click", () => {
+  const type = input.getAttribute("type") === "password" ? "text" : "password";
+  input.setAttribute("type", type);
 
-const passwordInput = document.getElementById('password');
-const togglePassword = document.getElementById('toggle-password');
-const eyeOpenIcon = document.getElementById('eye-open');
-const eyeCloseIcon = document.getElementById('eye-close');
-
-
-togglePassword.addEventListener('click', function () {
-
-  const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-  passwordInput.setAttribute('type', type);
-
-
-  if (type === 'password') {
-    eyeOpenIcon.style.display = 'inline';
-    eyeCloseIcon.style.display = 'none';
+  if (type === "password") {
+    eyeOpenIcon.style.display = "inline";
+    eyeCloseIcon.style.display = "none";
   } else {
-    eyeOpenIcon.style.display = 'none';
-    eyeCloseIcon.style.display = 'inline';
+    eyeOpenIcon.style.display = "none";
+    eyeCloseIcon.style.display = "inline";
   }
-});
+  });
+   
+})
+
+

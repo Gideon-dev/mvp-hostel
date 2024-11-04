@@ -10,8 +10,8 @@
     <title>Mountainviewprovince.com</title>
 </head>
 <body>
-    <div class="edit-container">
-        <div class="edit-header">
+    <div class="sign-up-container">
+        <div class="signup-header">
             <h2> Register </h2>
             <p> Sign up with your details to start booking </p>
         </div>
@@ -38,7 +38,7 @@
                 >
                 <span class="error-msg"></span>
             </div>
-            <div class="form-group ">
+            <div class="form-group">
                 <label for="Institution">Institution</label>
                 <div class="custom-select" >
                     <div class="select-selected" tabindex="0" role="button" aria-expanded="false">
@@ -85,8 +85,8 @@
                         
                     </div>
                     <div class="select-items select-hide">
-                      <div data-value="male" role="option" tabindex="0"><p class="option">Male</p></div>
-                      <div data-value="female" role="option" tabindex="0"><p class="option">Female</p></div>
+                      <div data-value="male" role="option" tabindex="0" class="opt"><p class="option">Male</p></div>
+                      <div data-value="female" role="option" tabindex="0"  class="opt"><p class="option">Female</p></div>
                     </div>
                 </div>
                 <input type="hidden" id="gender" name="gender">
@@ -100,16 +100,47 @@
                     name="password" 
                     id="password"
                     placeholder="Create your password"
-                    class="w-full"
+                    class="w-full p-input"
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" 
+                    title="Password must contain at least 8 characters, including uppercase, lowercase, a number, and a special character." 
+                    required
                     >
-                    <span id="toggle-password" class="eye-icon">
+                    <span class="toggle-password eye-icon" >
                       
-                        <svg id="eye-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg class="eye-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M1 12S5 5 12 5s11 7 11 7-4 7-11 7S1 12 1 12z"></path>
                             <circle cx="12" cy="12" r="3"></circle>
                         </svg>
                       
-                        <svg id="eye-close" style="display:none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg class="eye-close" style="display:none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17.94 17.94A10.43 10.43 0 0 1 12 19C5.373 19 1 12 1 12a18.6 18.6 0 0 1 5.34-5.34M16.24 8.76A6.4 6.4 0 0 0 12 7c-4.627 0-9 7-9 7a9.46 9.46 0 0 0 5 5"></path>
+                            <path d="M1 1l22 22"></path>
+                        </svg>
+                    </span>
+                </div>
+                <span class="error-msg"></span>
+            </div>
+            <div class="w-full form-group" id="password-box">
+                <label for="password">Confirm Password</label>
+                <div class="password-container">
+                    <input 
+                    type="password" 
+                    name="confirmPassword" 
+                    id="confirmPassword"
+                    placeholder="Create your password"
+                    class="w-full p-input"
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" 
+                    title="Password must contain at least 8 characters, including uppercase, lowercase, a number, and a special character." 
+                    required
+                    >
+                    <span class="toggle-password eye-icon">
+                      
+                        <svg class="eye-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12S5 5 12 5s11 7 11 7-4 7-11 7S1 12 1 12z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                      
+                        <svg class="eye-close" style="display:none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M17.94 17.94A10.43 10.43 0 0 1 12 19C5.373 19 1 12 1 12a18.6 18.6 0 0 1 5.34-5.34M16.24 8.76A6.4 6.4 0 0 0 12 7c-4.627 0-9 7-9 7a9.46 9.46 0 0 0 5 5"></path>
                             <path d="M1 1l22 22"></path>
                         </svg>

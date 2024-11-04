@@ -38,6 +38,9 @@
                     id="password"
                     placeholder="Create your password"
                     class="w-full"
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" 
+                    title="Password must contain at least 8 characters, including uppercase, lowercase, a number, and a special character." 
+                    required
                     >
                     <span id="toggle-password" class="eye-icon">
                       

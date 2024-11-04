@@ -178,8 +178,7 @@ button{
     width: 33.33%;
     height: 100%;
     aspect-ratio: 1/0.5;
-    margin: 0;
-    /* padding: 5px; */
+    margin: 0;  
 }
 .proceed-btn{
     width: 100%;

@@ -49,21 +49,26 @@ h1,h2,h3,h4,h5,h6{
 .hostel-card{
     display: flex;
     align-items: center;
+   /* gap: 15px; */
 }
 .img-holder{
     display: flex;
     flex-basis: 50%;
     width: 50%;
-    gap: 3px;
+    height: auto;
+    gap: 5px;
     overflow: scroll;
     object-position: center;
     object-fit: cover;
 }
- .hostel-card img{
+.hostel-card img{
     position: relative;
-    width: 100%;
+    min-width: 100%;
     height: auto;
- }
+    aspect-ratio: 1/1;
+    object-position: center;
+    object-fit: cover;
+}
 .hostel-utilites{
     text-align: left;
 }

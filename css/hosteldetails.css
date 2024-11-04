@@ -28,16 +28,15 @@ h1,h2,h3,h4,h5,h6{
 .hostel-media-box{
     width: 100%;
     aspect-ratio: 1/1;
-    object-fit: cover;
-    object-position: center;
+    /* border: 1px solid black; */
     border-radius: 10px;
     overflow: hidden;
 }
-.hostel-media-box img{
+/* .hostel-media-box img{
     width: 100%;
     height: 100%;
     transition: opacity 0.5s ease;
-}
+} */
 .hostel-media-box img.hidden{
     opacity: 0;
 }
@@ -47,9 +46,13 @@ h1,h2,h3,h4,h5,h6{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transition: opacity 0.5s ease;
+    /* border: 1px solid green; */
 }
 #hostel-details-container{
     padding: 10px;
+    min-height: 100dvh;
+
 }
 .utilities{
     justify-content: space-around;
@@ -113,6 +116,8 @@ h1,h2,h3,h4,h5,h6{
 }
 .scrollable{
     overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
     gap: 10px;
 }
 .t-img{

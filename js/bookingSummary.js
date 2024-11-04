@@ -16,4 +16,3 @@ const getGrandTotal  = (price, charge) =>{
 const totalBookingPrice = (getGrandTotal(payAmount,serviceCharge));
 document.querySelector(".result").innerHTML = totalBookingPrice;
 
-

@@ -13,4 +13,29 @@ form.addEventListener("submit", (event) => {
         feedbackMessage.textContent = "New password saved !";
     }
 
+});
+
+
+const passwordInputs = document.querySelectorAll(".p-input");
+
+passwordInputs.forEach((input)=> {
+    const togglePassword = input.parentNode.querySelector(".toggle-password");
+    const eyeOpenIcon = input.parentNode.querySelector(".eye-open");
+    const eyeCloseIcon = input.parentNode.querySelector(".eye-close");
+//    console.log(input.parentNode.querySelector(".toggle-password"));
+
+   togglePassword.addEventListener("click", () => {
+    const type = input.getAttribute("type") === "password" ? "text" : "password";
+    input.setAttribute("type", type);
+
+    if (type === "password") {
+      eyeOpenIcon.style.display = "inline";
+      eyeCloseIcon.style.display = "none";
+    } else {
+      eyeOpenIcon.style.display = "none";
+      eyeCloseIcon.style.display = "inline";
+    }
+  });
+   
 })
+

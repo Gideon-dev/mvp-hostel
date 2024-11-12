@@ -457,16 +457,19 @@ h1,h2,h3,h4,h5,h6{
 .flex-start{
     align-items: flex-start;
 }
-.news-card span:first-child{
-    width: 51.5%;
-    max-height: 90px;
-    object-fit: cover;
+/* .news-card span:first-child{
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
     object-position: center;
     border-radius: 5px;
-}
+    position: relative;
+} */
 .news-card span img{
-    width: 100%;
-   aspect-ratio: 1/1;
+    position: relative;
+    width: 90px;
+    height: 90px;
+   
 }
 .news-card span p{
     margin: 0;
@@ -485,6 +488,8 @@ h1,h2,h3,h4,h5,h6{
 }
 .news-section{
     margin-top: 25px;
+    margin-bottom: 56px;
+
 }
 .n-card-holder{
     margin-top: 25px;
@@ -509,8 +514,9 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 29px;
 }
 .start-booking{
-    margin-top: 56px;
+    /* margin-top: 56px; */
     margin-bottom: 69px;
+    /* background-color: black; */
 }
 .booking-box-t p{
     margin: 0;
@@ -520,11 +526,12 @@ h1,h2,h3,h4,h5,h6{
     background-color: rgba(134, 58, 10, 1);
     gap: 8px;
     display: flex;
-    height: auto;
+    height: 256px;
+    align-items: center;
 }
 .b-img{
     width: 50%;
-    height: auto;
+    height: 100%;
 }
 .b-img img{
     width: 100%;
@@ -532,9 +539,10 @@ h1,h2,h3,h4,h5,h6{
 }
 .booking-box-t{
     width: 50%;
+    height: auto;
 }
 .booking-box-t p:first-child{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 26px;
     letter-spacing: -0.03em;

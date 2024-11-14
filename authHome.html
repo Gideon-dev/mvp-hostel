@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
     <title>Mountainviewprovince.com</title>
 </head>
@@ -18,7 +19,7 @@
                     </svg>                      
                 </span>
                 <span class="prof-pic">
-                    <img src="images/bts.png" alt="profile picture">
+                    <img src="images/gallery-img-01.png" alt="profile picture">
                 </span>
             </div>
         </nav>
@@ -43,22 +44,47 @@
         </section>
 
         <section class="recom-section">
-            <h2>Recommended</h2>
-            <div id="card-row">
-
-                <div class="card">
-                    <div class="car-image-box">
+            <h2>Recommended for you </h2>
+            <div class="card">
+                <div class="car-image-box">
+                    <img
+                        class="recom-img" 
+                        src="images/province-arcade.png" 
+                        alt="hostel's images" 
+                        loading="lazy"
+                    >
+                </div>
+                <div class="card-content">
+                    <span class="title-span"> 
+                        <p class="bold-title title">Mountain View Pro Phase 2 </p>    
+                    </span>
+                    <p class="location">
+                        <span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.0286 3.92909C10.4161 1.23409 8.0653 0.020752 6.0003 0.020752C6.0003 0.020752 6.0003 0.020752 5.99447 0.020752C3.9353 0.020752 1.57863 1.22825 0.966133 3.92325C0.283633 6.93325 2.12697 9.48242 3.7953 11.0866C4.41363 11.6816 5.20697 11.9791 6.0003 11.9791C6.79363 11.9791 7.58697 11.6816 8.19947 11.0866C9.8678 9.48242 11.7111 6.93909 11.0286 3.92909ZM6.0003 6.85159C4.9853 6.85159 4.1628 6.02909 4.1628 5.01409C4.1628 3.99909 4.9853 3.17659 6.0003 3.17659C7.0153 3.17659 7.8378 3.99909 7.8378 5.01409C7.8378 6.02909 7.0153 6.85159 6.0003 6.85159Z" fill="#292D32"/>
+                            </svg>                                                            
+                        </span>
+                        Plot 832 Emmanuel Crescent, off Idris Ibrahim
+                    </p>
+                    <p class="p-y">starts at<span class="price-tag"> #480,000</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="rated-section">
+            <h2 class="r-title"> Top Rated</h2>
+            <div class="rated-rows flex flex-c">
+                <div class="t-r-card flex w-full gap-5 mb-lg">
+                    <div class="card-image-box">
                         <img
                             class="recom-img" 
-                            src="images/image.png" 
+                            src="images/r-img-01.png" 
                             alt="hostel's images" 
                             loading="lazy"
                         >
                     </div>
-                    <div class="card-content">
-                        <span class="title-span"> 
-                            <p class="bold-title title">Blue Water Hostel & Lodge </p>    
-                        </span>
+                    <div class="t-r-card-content">
+                       
+                        <p id="t-r-title"> MOUNTAIN VIEW PHASE 3 </p> 
                         <p class="location">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons">
@@ -66,19 +92,29 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                                 </svg>                              
                             </span>
-                            45, Ridge Street, Eclipse Road</p>
-                        </span>
-                        <p class="p-y"><span class="price-tag">#180,000</span>/year</p>
+                            45, Ridge Street, Eclipse Road
+                        </p>
+                        <p class="ratings">
+                            <span>
+                               <img src="images/star-fig.svg" alt="rating icon">                          
+                            </span>
+                            4.8 (<span class="no-of-r">158 reviews</span>)
+                        </p>
+                        <p class="pricing">starts at<span class="price-tag"> #320,000</span>/year</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="car-image-box">
-                        <img class="recom-img" src="images/image.png" alt="hostel's images" loading="lazy">
+                <div class="t-r-card flex w-full gap-5 mb-lg">
+                    <div class="card-image-box">
+                        <img
+                            class="recom-img" 
+                            src="images/r-img-01.png" 
+                            alt="hostel's images" 
+                            loading="lazy"
+                        >
                     </div>
-                    <div class="card-content">
-                        <span class="title-span"> 
-                            <p class="bold-title title">Blue Water Hostel & Lodge </p>    
-                        </span>
+                    <div class="t-r-card-content">
+                       
+                        <p id="t-r-title"> MOUNTAIN VIEW PHASE 2 </p> 
                         <p class="location">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons">
@@ -86,163 +122,15 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                                 </svg>                              
                             </span>
-                            45, Ridge Street, Eclipse Road</p>
-                        </span>
-                        <p class="p-y"><span class="price-tag">#180,000</span>/year</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="car-image-box">
-                        <img class="recom-img" src="images/image.png" alt="hostel's images" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <span class="title-span"> 
-                            <p class="bold-title title">Blue Water Hostel & Lodge </p>    
-                        </span>
-                        <p class="location">
+                            45, Ridge Street, Eclipse Road
+                        </p>
+                        <p class="ratings">
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                                </svg>                              
+                               <img src="images/star-fig.svg" alt="rating icon">                          
                             </span>
-                            45, Ridge Street, Eclipse Road</p>
-                        </span>
-                        <p class="p-y"><span class="price-tag">#180,000</span>/year</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section class="rated-section">
-            <div class="r-head">
-                <h2 class="r-title"> Top Rated</h2>
-                <p><a href="#" class="see-all-link">See all</a></p>
-            </div>
-            <div class="rated-rows">
-                <div class="rated-row-1">
-                    <div class="rated-card">
-                        <div class="card-image-box">
-                            <img class="rated-img" src="images/image.png" alt="hostel's images" loading="lazy">
-                        </div>
-                        <div class="r-card-content">
-                            <span class="title-span"> 
-                                <p class="bold-title title">Blue Water Hostel & Lodge </p>    
-                            </span>
-                            <p class="location">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                                    </svg>                              
-                                </span>
-                                45, Ridge Street, Eclipse Road</p>
-                            </span>
-                            <p class="p-y"><span class="price-tag">#180,000</span>/year</p>
-                        </div>
-                    </div>
-                    <div class="rated-card">
-                        <div class="card-image-box">
-                            <img class="rated-img" src="images/image.png" alt="hostel's images" loading="lazy">
-                        </div>
-                        <div class="r-card-content">
-                            <span class="title-span"> 
-                                <p class="bold-title title">Blue Water Hostel & Lodge </p>    
-                            </span>
-                            <p class="location">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                                    </svg>                              
-                                </span>
-                                45, Ridge Street, Eclipse Road</p>
-                            </span>
-                            <p class="p-y"><span class="price-tag">#180,000</span>/year</p>
-                        </div>
-                    </div>
-                    <div class="rated-card">
-                        <div class="card-image-box">
-                            <img class="rated-img" src="images/image.png" alt="hostel's images" loading="lazy">
-                        </div>
-                        <div class="r-card-content">
-                            <span class="title-span"> 
-                                <p class="bold-title title">Blue Water Hostel & Lodge </p>    
-                            </span>
-                            <p class="location">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                                    </svg>                              
-                                </span>
-                                45, Ridge Street, Eclipse Road</p>
-                            </span>
-                            <p class="p-y"><span class="price-tag">#180,000</span>/year</p>
-                        </div>
-                    </div>
-                   
-                </div>
-                <div class="rated-row-2">
-                    <div class="rated-card">
-                        <div class="card-image-box">
-                            <img class="rated-img" src="images/image.png" alt="hostel's images" loading="lazy">
-                        </div>
-                        <div class="r-card-content">
-                            <span class="title-span"> 
-                                <p class="bold-title title">Blue Water Hostel & Lodge </p>    
-                            </span>
-                            <p class="location">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                                    </svg>                              
-                                </span>
-                                45, Ridge Street, Eclipse Road</p>
-                            </span>
-                            <p class="p-y"><span class="price-tag">#180,000</span>/year</p>
-                        </div>
-                    </div>
-                    <div class="rated-card">
-                        <div class="card-image-box">
-                            <img class="rated-img" src="images/image.png" alt="hostel's images" loading="lazy">
-                        </div>
-                        <div class="r-card-content">
-                            <span class="title-span"> 
-                                <p class="bold-title title">Blue Water Hostel & Lodge </p>    
-                            </span>
-                            <p class="location">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                                    </svg>                              
-                                </span>
-                                45, Ridge Street, Eclipse Road</p>
-                            </span>
-                            <p class="p-y"><span class="price-tag">#180,000</span>/year</p>
-                        </div>
-                    </div>
-                    <div class="rated-card">
-                        <div class="card-image-box">
-                            <img class="rated-img" src="images/image.png" alt="hostel's images" loading="lazy">
-                        </div>
-                        <div class="r-card-content">
-                            <span class="title-span"> 
-                                <p class="bold-title title">Blue Water Hostel & Lodge </p>    
-                            </span>
-                            <p class="location">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                                    </svg>                              
-                                </span>
-                                45, Ridge Street, Eclipse Road</p>
-                            </span>
-                            <p class="p-y"><span class="price-tag">#180,000</span>/year</p>
-                        </div>
+                            4.8 (<span class="no-of-r">158 reviews</span>)
+                        </p>
+                        <p class="pricing">starts at<span class="price-tag"> #320,000</span>/year</p>
                     </div>
                 </div>
             </div>
@@ -250,3 +138,4 @@
     </div>
 </body>
 </html>
+

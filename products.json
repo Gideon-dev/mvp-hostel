@@ -1,0 +1,61 @@
+[
+    { 
+        "id": 0,
+        "slug": "premium-diamond",
+        "name": "Premium Single Room", 
+        "image": "https://via.placeholder.com/100", 
+        "description": "This is Product 1", 
+        "price": "$10" 
+    },
+
+    { 
+        "id": 1, 
+        "slug": "executive-single-room", 
+        "name": "Executive Single Room", 
+        "image": "https://via.placeholder.com/100", 
+        "description": "This is Product 2", 
+        "price": "$20" 
+    },
+    { 
+        "id": 2, 
+        "slug": "premium-gold-room-of-2",
+        "name": "Premium Gold Room of 2", 
+        "image": "https://via.placeholder.com/100", 
+        "description": "This is Product 3", 
+        "price": "$30" 
+    },
+    { 
+        "id": 3, 
+        "slug": "executive-room-of-2",
+        "name": "Executive Room of 2", 
+        "image": "https://via.placeholder.com/100", 
+        "description": "This is Product 3", 
+        "price": "$30" 
+    },
+    { 
+        "id": 4, 
+        "slug": "room-of-3",
+        "name": "Room of 3", 
+        "image": "https://via.placeholder.com/100", 
+        "description": "This is Product 3", 
+        "price": "$30" 
+    },
+    { 
+        "id": 5, 
+        "slug": "room-of-5",
+        "name": "Room of 5", 
+        "image": "https://via.placeholder.com/100", 
+        "description": "This is Product 3", 
+        "price": "$30" 
+    },
+    { 
+        "id": 6, 
+        "slug": "room-of-6",
+        "name": "Executive Room of 2", 
+        "image": "https://via.placeholder.com/100", 
+        "description": "This is Product 3", 
+        "price": "$30" 
+    }
+
+]
+  

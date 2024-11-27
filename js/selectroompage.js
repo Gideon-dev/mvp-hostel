@@ -51,13 +51,14 @@ roomNo.forEach((room) => room.addEventListener("click",()=>{
 
 //to do- to make sure a previously selected unrelevent checkbox isnt issued, 
 // if the user didnt uncheck it and selects another option.
-
+let flexIsChecked;
 const flexiPlans = document.querySelectorAll('input[data-type="flex-plan"]'); 
 flexiPlans.forEach((plan)=> {
   plan.addEventListener("click", (e) => {
 
     //making sure multiple checkboxes aren't selected
     if(e.target.checked){
+      flexIsChecked = true;
       flexiPlans.forEach((select) => select !== e.target ? select.checked = false : select.checked = true);
 
 
@@ -91,7 +92,7 @@ flexiPlans.forEach((plan)=> {
         if(semOption){
           semOption.setAttribute("data-price", flexSem.toFixed(2))
         }
-        // console.log(semOption, sesOption);
+        console.log(semOption, sesOption);
         
 
         PriceForSession.innerHTML = formattedSesPrice;
@@ -108,6 +109,7 @@ flexiPlans.forEach((plan)=> {
       }
 
     }else{
+      flexIsChecked = false;
       // Reverting to the original prices
       const parentContainer = e.target.closest(".sub-option");
 
@@ -148,15 +150,14 @@ function formatCurrency(amount) {
 
 // document.getElementById("select-room-form").addEventListener("submit",(e) =>{
 //   e.preventDefault();
-//   // const selectedRoomCategory = $("input[name='selected_room_category']:checked").val();
-//   // const rate_type = $("input[name='hostel_rate']:checked").val();
-//   // const rate_price = $("input[name='hostel_rate']:checked").data("price");
+  
 
 //   const selectedRoomCategory = document.querySelector("input[name='selected_room_category']:checked").value;
 //   const rate_type = document.querySelector("input[name='hostel_rate']:checked").value;
 //   const rate_price = document.querySelector("input[name='hostel_rate']:checked").dataset.price;
+  
 
-//   console.log(selectedRoomCategory, rate_type, rate_price);
+//   console.log(selectedRoomCategory, rate_type, rate_price, flexIsChecked);
   
 // })
 

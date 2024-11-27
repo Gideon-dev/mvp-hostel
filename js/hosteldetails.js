@@ -73,7 +73,33 @@ carouselImages.forEach((image) => {
 
 const blocks = document.querySelectorAll(".form-group");
 blocks.forEach((block) => block.addEventListener("click", () =>{
+
    blocks.forEach((b) => b.classList.remove("b-select"));
 
    block.classList.add("b-select");
+
+    //    if(block.classList.contains("b-select")){
+    //     const blockNameInput = block.querySelector('input[name="block-name"]');
+    //     const roomAvailInput = block.querySelector('input[name="available-rooms"]');
+    //     const blockName = block.querySelector(".block-name").innerHTML;
+    //     const blockRoomsAvailable = block.querySelector(".no-rooms").innerHTML;
+
+    //     blockNameInput.setAttribute('data-name', blockName);
+    //     roomAvailInput.setAttribute('data-room', blockRoomsAvailable);
+
+    //    }else{
+    //     const blockNameInput = block.querySelector('input[name="block-name"]');
+    //     const roomAvailInput = block.querySelector('input[name="available-rooms"]');
+
+    //     blockNameInput.setAttribute('data-name', " ");
+    //     roomAvailInput.setAttribute('data-room', " ");
+    //    }
+
 }));
+
+// document.getElementById("block-list").addEventListener("submit", () =>{
+//     const firstData = document.querySelector('input[name="block-name"]').dataset.name;
+//     const secondData = document.querySelector('input[name="no-rooms "]').dataset.room;
+//     console.log(firstData, secondData);
+    
+// })

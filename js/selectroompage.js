@@ -41,17 +41,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 const roomNo = document.querySelectorAll(".r-no-box");
+const roomNoInput = document.querySelector('input[name="room-number"]');
+
 roomNo.forEach((room) => room.addEventListener("click",()=>{
-  console.log(room.innerHTML);
+  // console.log(room.innerHTML);
+  roomNoInput.setAttribute("data-room", room.innerHTML);
+  // console.log(roomNoInput.dataset.room);
+  
   
   roomNo.forEach((r)=> r.classList.remove("bg-brown"));
   room.classList.add("bg-brown");
   
 }));
 
+
 //to do- to make sure a previously selected unrelevent checkbox isnt issued, 
 // if the user didnt uncheck it and selects another option.
+
 let flexIsChecked;
+// const roomNoInput = document.querySelector('input[name="room-number"]');
 const flexiPlans = document.querySelectorAll('input[data-type="flex-plan"]'); 
 flexiPlans.forEach((plan)=> {
   plan.addEventListener("click", (e) => {
@@ -64,11 +72,18 @@ flexiPlans.forEach((plan)=> {
 
       
       const parentContainer = e.target.closest(".sub-option");
+      // const roomNumber = parentContainer.querySelector(".bg-brown");
+      // roomNumber ? roomNoInput.setAttribute("data-roomNo", roomNumber.innerHTML) :
+      // roomNoInput.setAttribute("data-roomNo", " ");
       
       if(parentContainer){
         const PriceForSemester = parentContainer.querySelector(".sem-price");
         const PriceForSession = parentContainer.querySelector(".ses-price");
+
+        // const roomNumber = parentContainer?.querySelector(".bg-brown");
+        // console.log(roomNumber.innerHTML);
         
+
         //selecting the appropiate option of the checked flex pay
         const semOption = parentContainer.querySelector(".sem-option input");
         const sesOption = parentContainer.querySelector(".ses-option input");
@@ -92,7 +107,7 @@ flexiPlans.forEach((plan)=> {
         if(semOption){
           semOption.setAttribute("data-price", flexSem.toFixed(2))
         }
-        console.log(semOption, sesOption);
+        // console.log(semOption, sesOption);
         
 
         PriceForSession.innerHTML = formattedSesPrice;
@@ -100,7 +115,9 @@ flexiPlans.forEach((plan)=> {
           sesOption.setAttribute("data-price", flexSes.toFixed(2))
         }
 
-          // Store the original prices for later use
+        // roomNoInput.setAttribute("data-room", roomNumber.innerHTML);
+
+        // Store the original prices for later use
         PriceForSemester.dataset.originalPrice = semPrice;
         PriceForSession.dataset.originalPrice = sesPrice;
 
@@ -123,6 +140,10 @@ flexiPlans.forEach((plan)=> {
         const semOption = parentContainer.querySelector(".sem-option input");
         const sesOption = parentContainer.querySelector(".ses-option input");
 
+        // const roomNumber = parentContainer.querySelector(".room-row .bg-brown");
+        
+        
+
         // console.log(semOption, sesOption);
 
 
@@ -132,6 +153,8 @@ flexiPlans.forEach((plan)=> {
 
         PriceForSession.innerHTML = formatCurrency(sesPrice);
         sesOption.setAttribute("data-price", sesPrice.toFixed(2));
+
+        // roomNoInput.setAttribute("data-room", roomNumber.innerHTML);
 
       }
     }
@@ -155,9 +178,10 @@ function formatCurrency(amount) {
 //   const selectedRoomCategory = document.querySelector("input[name='selected_room_category']:checked").value;
 //   const rate_type = document.querySelector("input[name='hostel_rate']:checked").value;
 //   const rate_price = document.querySelector("input[name='hostel_rate']:checked").dataset.price;
+//   const room_number = document.querySelector("input[name='room-number']").dataset.room;
   
 
-//   console.log(selectedRoomCategory, rate_type, rate_price, flexIsChecked);
+//   console.log({selectedRoomCategory, rate_type, rate_price, room_number, flexIsChecked});
   
 // })
 

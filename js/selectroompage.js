@@ -45,7 +45,7 @@ const roomNoInput = document.querySelector('input[name="room-number"]');
 
 roomNo.forEach((room) => room.addEventListener("click",()=>{
   // console.log(room.innerHTML);
-  roomNoInput.setAttribute("data-room", room.innerHTML);
+  roomNoInput.setAttribute("value", room.innerHTML);
   // console.log(roomNoInput.dataset.room);
   
   
@@ -171,19 +171,19 @@ function formatCurrency(amount) {
 };
 
 
-// document.getElementById("select-room-form").addEventListener("submit",(e) =>{
-//   e.preventDefault();
+document.getElementById("select-room-form").addEventListener("submit",(e) =>{
+  e.preventDefault();
   
 
-//   const selectedRoomCategory = document.querySelector("input[name='selected_room_category']:checked").value;
-//   const rate_type = document.querySelector("input[name='hostel_rate']:checked").value;
-//   const rate_price = document.querySelector("input[name='hostel_rate']:checked").dataset.price;
-//   const room_number = document.querySelector("input[name='room-number']").dataset.room;
+  const selectedRoomCategory = document.querySelector("input[name='selected_room_category']:checked").value;
+  const rate_type = document.querySelector("input[name='hostel_rate']:checked").value;
+  const rate_price = document.querySelector("input[name='hostel_rate']:checked").dataset.price;
+  const room_number = document.querySelector("input[name='room-number']").value;
   
 
-//   console.log({selectedRoomCategory, rate_type, rate_price, room_number, flexIsChecked});
+  console.log({selectedRoomCategory, rate_type, rate_price, room_number, flexIsChecked});
   
-// })
+});
 
 
   

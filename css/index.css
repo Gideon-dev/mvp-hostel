@@ -127,6 +127,9 @@ img {
     gap: 12px;
 
 }
+#video-btn{
+    gap: 5px;
+}
 #video-btn p {
     font-size: 14px;
     font-weight: 600;
@@ -135,6 +138,7 @@ img {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    color: #565454;
 }
 .get-started{
     padding: 5px 17px;

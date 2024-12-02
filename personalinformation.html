@@ -17,27 +17,123 @@
             </svg>   
             <p> Personal Information </p>           
         </div>
-        <div class="p-p">
+        <!-- <div class="p-p">
             <img src="images/bts.png" alt="profile picture">
-        </div>
-        <div class="form-group">
+        </div> -->
+        <div class="form-group font-sora">
             <label for="student's-name">Student's name</label>
-            <input class="font-sora" type="text" id="stu-name" value="Micheal Gideon">
+            <input class="font-sora" type="text" id="student's-name" placeholder="Micheal Gideon">
         </div>
-        <div class="form-group">
+        <div class="form-group font-sora">
             <label for="email">Email address</label>
-            <input class="font-sora" type="text" id="email" value="Michealgideon2002@gmail.com">
+            <input class="font-sora" type="text" id="email" placeholder="Michealgideon2002@gmail.com">
         </div>
-        <div class="form-group">
+        <div class="form-group font-sora">
             <label for="phone-number">Phone number</label>
-            <input class="font-sora" type="tel" id="phone-no" value="+234903452348">
+            <input class="font-sora" type="tel" id="phone-number" place="+23412345678">
         </div>
-        <div class="form-group">
-            <label for="institution">Institution</label>
-            <input class="font-sora" type="text" id="institution" value="Baze University">
+        <div class="form-group font-sora">
+            <label for="gender">Gender</label>
+            <!-- <input type="hidden" id="gender" name="gender"> -->
+            <div class="custom-select">
+                <div class="select-selected " tabindex="0" role="button" aria-expanded="false">
+                    <p class="displayText">Select Gender</p>
+                    <span class="sel_icon">
+                        <svg id="caret-down" class="switch-icons caret-d" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>  
+                            <g id="SVGRepo_iconCarrier"> <path d="M19.1416 9.92896L12.7776 16.2929C12.3871 16.6834 11.7539 16.6834 11.3634 16.2929L4.99946 9.92895" stroke="#282727" stroke-linecap="round"/> </g>
+                        </svg>
+                        <svg id="caret-up" class="switch-icons caret-u not-expanded" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                            <g id="SVGRepo_iconCarrier"> <path d="M5 14.0711L11.364 7.70711C11.7545 7.31658 12.3877 7.31658 12.7782 7.70711L19.1421 14.0711" stroke="#282727" stroke-linecap="round"/> </g>
+                        </svg>
+                    </span>   
+                    
+                </div>
+                <div class="select-items select-hide">
+                  <div data-value="male" role="option" tabindex="0" class="opt"><p class="option">Male</p></div>
+                  <div data-value="female" role="option" tabindex="0"  class="opt"><p class="option">Female</p></div>
+                </div>
+            </div>
+            <input type="hidden" id="gender" name="gender">
+           
+            <span class="error-msg"></span>
         </div>
-
+        <div class="form-group font-sora">
+            <label for="Institution">Institution</label> 
+            <!-- <input type="hidden" id="Institution" name="Institution"> -->
+            <div class="custom-select" >
+                <div class="select-selected" tabindex="0" role="button" aria-expanded="false">
+                    <p class="displayText">Select Institution</p>
+                    <span class="sel_icon">
+                        <svg id="caret-down" class="switch-icons" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>  
+                            <g id="SVGRepo_iconCarrier"> <path d="M19.1416 9.92896L12.7776 16.2929C12.3871 16.6834 11.7539 16.6834 11.3634 16.2929L4.99946 9.92895" stroke="#282727" stroke-linecap="round"/> </g>
+                        </svg>
+                        <svg id="caret-up" class="switch-icons not-expanded" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                            <g id="SVGRepo_iconCarrier"> <path d="M5 14.0711L11.364 7.70711C11.7545 7.31658 12.3877 7.31658 12.7782 7.70711L19.1421 14.0711" stroke="#282727" stroke-linecap="round"/> </g>
+                        </svg>
+                    </span>   
+                    
+                </div>
+                <div class="select-items select-hide">
+                  <div data-value="Baze University" role="option" tabindex="0" class="opt"><p class="option">Baze University</p></div>
+                  <div data-value="Nile University" role="option" tabindex="0" class="opt"><p class="option">Nile University</p></div>
+                </div>
+            </div>
+            <input type="hidden" id="Institution" name="Institution">
+           
+            <span class="error-msg"></span>
+        </div>
+        <section id="room-details" class="font-sora">
+            <h2> Room Details </h2>
+            <div class="room-details-content">
+                <div id="room-no">
+                    <p>Room number</p>
+                    <p>Room 28</p>
+                </div>
+                <div id="n-bed">
+                    <p>No of Bed</p>
+                    <p>Three(03)</p>
+                </div>
+                <div id="room-cat">
+                    <p>Room Category</p>
+                    <p>Premium Gold Single</p>
+                </div>
+                <div id="b-rate">
+                    <p>Booking Rate</p>
+                    <p>2 Semester</p>
+                </div>
+            </div>
+        </section>
+        <section id="payment-details">
+            <h2> Payment Details </h2>
+            <div class="payment-details-content">
+                <div id="total-pay">
+                    <p>Price</p>
+                    <p><span class="price">755000</span></p>
+                </div>
+                <div id="sf">
+                    <p>Service Fee</p>
+                    <p><span class="service-charge">5000</span></p>
+                </div>
+                <hr class="divider">
+                <div id="grand-total">
+                    <p>TOTAL PAYMENT</p>
+                    <p ><span class="result"></span> </p>
+                </div>
+            </div>
+        </section>  
+        <div class="button-section ">
+            <button type="submit" id="book-room" class="font-sora">Proceed to checkout </button>
+        </div>
     </div>
     
+    <script src="js/personalInformation.js"></script>
 </body>
 </html>

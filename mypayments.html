@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/payments.css">
+    <title>Mountainviewprovince.com</title>
+</head>
+<body>
+    <div id="payment-container" >
+        <h1>My Payments</h1>
+
+        <section id="selected-hostel">
+            <div>
+                <img class="selected-img" src="images/booked-img.png" alt="hostel's image" loading="lazy">  
+            </div>
+            <div class="booked-details">
+                <p class="hos-name">Blue Water Hostel & Lodge</p>
+                <p class="booking">3 flexible payment <p>
+            </div>
+        </section>
+        <section class="balance-section">
+            <p class="sub-total-bal"> 250000 </p>
+            <p class="total-bal"> Total Due Balance: <span class="balance">250000</span></p>
+        </section>
+        <div class="button-section ">
+            <button type="submit" id="book-room" class="font-sora">Pay Now </button>
+        </div>
+    </div>
+    <section id="history-board">
+        <div>
+            <div class="payment-card flex">
+                <div class="pay-box flex gap-14">
+                    <img src="images/loader.svg" class="" alt="">
+                    <div class="pay-info">
+                        <p>Paid in <span class="date-span">Nov,22,2024</span></p>
+                        <p class="h-price">250000</p>
+                    </div>
+                    <!-- <img src="images/paid-icon.svg" alt=""> -->
+                </div>
+                <div class="pay-icon-status">
+                    <img src="images/paid-icon.svg" alt="">
+                </div>
+            </div>
+            <div class="payment-card flex">
+                <div class="pay-box flex gap-14">
+                    <img src="images/loader-2.svg" class="" alt="">
+                    <div class="pay-info">
+                        <p>Paid in <span class="date-span">Nov,22,2024</span></p>
+                        <p class="h-price">250000</p>
+                    </div>
+                    <!-- <img src="images/paid-icon.svg" alt=""> -->
+                </div>
+                <div class="pay-icon-status">
+                    <img src="images/pending-icon.svg" alt="">
+                </div>
+            </div>
+            <div class="payment-card flex">
+                <div class="pay-box flex gap-14">
+                    <img src="images/loader-3.svg" class="" alt="">
+                    <div class="pay-info">
+                        <p>Paid in <span class="date-span">Nov,22,2024</span></p>
+                        <p class="h-price">250000</p>
+                    </div>
+                    <!-- <img src="images/paid-icon.svg" alt=""> -->
+                </div>
+                <div class="pay-icon-status">
+                    <img src="images/pending-icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="js/mypayment.js"></script>
+</body>
+</html>

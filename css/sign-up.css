@@ -42,10 +42,9 @@ input{
     outline: none;
 }
 input:focus{
-    border: 2px solid #863A0A;
+    border: 1px solid #863A0A;
     overflow: hidden;
     box-shadow: none;
-
 }
 .form-group label{
     width: 100%;

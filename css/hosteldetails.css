@@ -219,6 +219,10 @@ a{
 .not-expanded{
     display: none;
 }
+.no-h{
+    height: 0;
+    opacity: 0;
+}
 .hostel-head-icons{
     width: 25px;
     height: 25px;

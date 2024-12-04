@@ -30,24 +30,44 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-const caretUp = document.getElementById("caret-up");
-const caretDown= document.getElementById("caret-down");
-const dropdownContent = document.getElementById("other-content");
-caretUp.addEventListener("click", function(){
-    // e.preventDefault();
-    caretUp.classList.add("not-expanded");   
-    caretDown.classList.remove("not-expanded");
-    dropdownContent.style.height = '0';
-    dropdownContent.style.opacity = '0';
+// const caretUp = document.getElementById("caret-up");
+// const caretDown= document.getElementById("caret-down");
+// const dropdownContent = document.getElementById("other-content");
+// caretUp.addEventListener("click", function(){
+//     caretUp.classList.add("not-expanded");   
+//     caretDown.classList.remove("not-expanded");
+//     dropdownContent.style.height = '0';
+//     dropdownContent.style.opacity = '0';
 
-})
-caretDown.addEventListener("click", function(){
-    caretDown.classList.toggle("not-expanded");
-    caretUp.classList.toggle("not-expanded");
-    dropdownContent.style.height = dropdownContent.scrollHeight + 'px';
-    dropdownContent.style.opacity = '1';
+// })
+// caretDown.addEventListener("click", function(){
+//     caretDown.classList.toggle("not-expanded");
+//     caretUp.classList.toggle("not-expanded");
+//     dropdownContent.style.height = dropdownContent.scrollHeight + 'px';
+//     dropdownContent.style.opacity = '1';
 
-});
+// });
+
+// const dropdownContainers = document.querySelectorAll(".drop-container");
+const caretDown = document.querySelectorAll(".c-down");
+const caretUp = document.querySelectorAll(".c-up");
+// const dropdownContent = document.querySelectorAll(".dropdown-content");
+
+caretUp.forEach((icon)=> icon.addEventListener("click",()=>{
+    const dropdownContent = icon.closest(".drop-container").querySelector(".dropdown-content");
+    const nextIcon = icon.closest(".icons-holder").querySelector(".c-down");
+    icon.classList.add("not-expanded");   
+    nextIcon.classList.remove("not-expanded");
+    dropdownContent.classList.toggle('no-h');
+}));
+
+caretDown.forEach((icon)=> icon.addEventListener("click",()=>{
+    const dropdownContent = icon.closest(".drop-container").querySelector(".dropdown-content");
+    const nextIcon = icon.closest(".icons-holder").querySelector(".c-up");
+    icon.classList.add("not-expanded");   
+    nextIcon.classList.remove("not-expanded");
+    dropdownContent.classList.toggle('no-h');
+}));
 
 
 

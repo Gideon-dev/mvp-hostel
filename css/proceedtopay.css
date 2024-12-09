@@ -50,6 +50,12 @@ p{
     align-items: center;
     gap: 10px;
 }
+.selected-img{
+    width: 55px;
+    height: 55px;
+    /* aspect-ratio: 1/1; */
+    border-radius: 5px;
+}
 #selected-hostel,#room-no,#room-cat,
 #n-bed,#b-rate,#total-pay,#sf,
 #grand-total,#payment-options{

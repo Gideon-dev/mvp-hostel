@@ -48,10 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // });
 
-// const dropdownContainers = document.querySelectorAll(".drop-container");
+
 const caretDown = document.querySelectorAll(".c-down");
 const caretUp = document.querySelectorAll(".c-up");
-// const dropdownContent = document.querySelectorAll(".dropdown-content");
+
 
 caretUp.forEach((icon)=> icon.addEventListener("click",()=>{
     const dropdownContent = icon.closest(".drop-container").querySelector(".dropdown-content");

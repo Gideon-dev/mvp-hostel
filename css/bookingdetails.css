@@ -42,6 +42,10 @@ section h2{
 #selected-hostel p{
     margin: 0;
 }
+.selected-img{
+    width: 55px;
+    height: 55px;
+}
 
 .hos-name{
     font-weight: 600;
